@@ -1,5 +1,9 @@
 {
     "name": "inoplate/navigation",
+    "description": "The laravel framework navigation wrapper.",
+    "keywords": ["laravel", "widget", "inoplate"],
+    "license": "MIT",
+    "type": "project",
     "autoload": {
         "psr-4": {
             "Inoplate\\Navigation\\": "src/"
@@ -7,5 +11,8 @@
     },
     "require-dev": {
         "phpspec/phpspec": "~2.0"
+    },
+    "config": {
+        "preferred-install": "dist"
     }
 }
