@@ -1,0 +1,4 @@
+suites:
+  library_suite:
+    namespace: Inoplate\Navigation
+    psr4_prefix: Inoplate\Navigation
