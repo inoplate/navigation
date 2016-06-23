@@ -19,9 +19,7 @@ class NavigationServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('\Inoplate\Navigation\Navigation', 'Inoplate\Navigation\Navigation');
-        $this->app->singleton('navigation', function($app){
-            return new Navigation($app['authis'], $app['router'], $app['url'], $app['events']);
-        });
+        $this->app->alias('Inoplate\Navigation\Navigation', 'navigation');
     }
 
     /**
